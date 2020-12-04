@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace calculator
 {
 
-    class Context
+    public class Context
     {
         // define the interface ICalculate 
         private ICalculate _calculate;
@@ -24,54 +24,53 @@ namespace calculator
             this._calculate = calculate;
         }
 
-        // The Context delegates some work to the Calculate object instead of
-        // implementing multiple versions of the algorithm on its own.
-        public void DoSomeBusinessLogic()
-        {
-           
+
+        public double Do(double value1, double value2){
+            return this._calculate.DoOperation(value1, value2);
         }
     }
     //----------------------------------------------------------------------les 4 Operation
-    class ConcreteCalculateAddition : ICalculate 
+    public class ConcreteCalculateAddition : ICalculate 
     {
-        double result = double.NaN;
+        double result = 0;
 
         // ----------------l'addition 
-        public static double DoOperation(double value1, double value2, double result)
+        public double DoOperation(double value1, double value2)
         {
-            result = value1 + value2;
-            return result;
+            return  value1 + value2;;
         }
 
     }
-    class ConcreteCalculateSoustraction : ICalculate
+    
+    public class ConcreteCalculateSoustraction : ICalculate
     { 
 //-------------------- la soustraction
-        public static double DoOperation(double value1, double value2, double result)
+        public double DoOperation(double value1, double value2)
         {
-            result = value1 - value2 ;
-            return result;
+            return  value1 - value2;
         }
     }
-    class ConcreteCalculateMultiplication : ICalculate
+    
+    public class ConcreteCalculateMultiplication : ICalculate
     {
         // -----------------la Multiplication 
-        public static double DoOperation(double value1, double value2, double result )
+        public double DoOperation(double value1, double value2)
         {
-            result = value1 * value2;
-            return result;
+            return value1 * value2 ;
+;
         }
     }
-    class ConcreteCalculateDivision : ICalculate
+    public class ConcreteCalculateDivision : ICalculate
     {
         //---------------------- la Division 
-        public static double DoOperation(double value1, double value2, double result )
+        public double DoOperation(double value1, double value2)
         {
-            if (value2 != 0)
+            if (value2 == 0)
             {
-                result = value1 / value2;
+                new DivideByZeroException();
             }
-            return result;
+            
+            return value1 / value2;
         }
     }
   //----------------------------------------------------------------------------------------------------    
@@ -132,36 +131,31 @@ namespace calculator
                 Console.WriteLine("\t * - Multiplication");
                 Console.WriteLine("\t / - Division");
 
-                string operat = Console.ReadLine();
-
-                switch (operat)
+                string op = Console.ReadLine();
+                switch (op)
                 {
                     case "+":
                     
                         Console.WriteLine("Addition  \n");
                         context.SetCalculate(new ConcreteCalculateAddition());
-                        context.DoSomeBusinessLogic();
                         break;
 
                     case "-": 
 
                         Console.WriteLine("Soustraction  \n");
                         context.SetCalculate(new ConcreteCalculateSoustraction());
-                        context.DoSomeBusinessLogic();
                         break;
 
                     case "*":
                         
                         Console.WriteLine("Multiplication  \n");
                         context.SetCalculate(new ConcreteCalculateMultiplication());
-                        context.DoSomeBusinessLogic();
                         break;
 
                     case "/":
 
                         Console.WriteLine("Divison  \n");
                         context.SetCalculate(new ConcreteCalculateDivision());
-                        context.DoSomeBusinessLogic();
                         break;
 
                     default:
@@ -169,7 +163,7 @@ namespace calculator
                 }
                 try
                 {
-                    result = ICalculate.DoOperation(cleanValue1, cleanValue1, operat);
+                    result = context.Do(cleanValue1, cleanValue1);
                     if (double.IsNaN(result))
                     {
                         Console.WriteLine("This operation will result in a mathematical error.\n");
@@ -180,11 +174,12 @@ namespace calculator
                 {
                     Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
                 }
-                Console.WriteLine("Press any key to exit \n");
-                //Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
-                //if (Console.ReadLine() == "n") endApp = true;
+             //   Console.WriteLine("Press any key to exit \n");
 
-                //Console.WriteLine("\n"); 
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n");
             }
         
             return;
