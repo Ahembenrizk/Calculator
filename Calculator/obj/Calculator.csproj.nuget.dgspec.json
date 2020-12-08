@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\GitHub\\Calculator\\Calculator\\Calculator.csproj": {}
+    "D:\\GitHub\\Calculator\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "d:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj": {
+    "D:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj",
+        "projectUniqueName": "D:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj",
         "projectName": "CalculatorCore",
-        "projectPath": "d:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj",
+        "projectPath": "D:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "d:\\GitHub\\Calculator\\CalculatorCore\\obj\\",
+        "outputPath": "D:\\GitHub\\Calculator\\CalculatorCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "d:\\GitHub\\Calculator\\Calculator\\Calculator.csproj": {
+    "D:\\GitHub\\Calculator\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\GitHub\\Calculator\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "D:\\GitHub\\Calculator\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "d:\\GitHub\\Calculator\\Calculator\\Calculator.csproj",
+        "projectPath": "D:\\GitHub\\Calculator\\Calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "d:\\GitHub\\Calculator\\Calculator\\obj\\",
+        "outputPath": "D:\\GitHub\\Calculator\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "d:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj": {
-                "projectPath": "d:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj"
+              "D:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj": {
+                "projectPath": "D:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj"
               }
             }
           }

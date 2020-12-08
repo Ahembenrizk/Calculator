@@ -9,3 +9,4 @@ D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.csproj.CoreC
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.dll
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\ref\CalculatorCore.dll
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.pdb
+D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.csprojAssemblyReference.cache

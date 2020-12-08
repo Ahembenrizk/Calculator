@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q1Nb4HBT5wRlubsWk98ROozPK72P2wekWXiXHVhHLgB/IOjl7raruBPPZ1xFgS2+u7hbSvp1KZoJxrPPC9IXYg==",
+  "dgSpecHash": "U+rGSbqcOXaronEBoxvI6C4IbOvHYh9dYiiHoRKMHOqpDPgBdACycIfbmSYCf4syj+ofNUxDa6V3h11599c4Mw==",
   "success": true,
-  "projectFilePath": "d:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj",
+  "projectFilePath": "D:\\GitHub\\Calculator\\CalculatorCore\\CalculatorCore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
