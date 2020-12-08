@@ -8,12 +8,12 @@ namespace CalculatorCore
     {
         public  double DoOperation (double value1 , double value2)
         {
-             if (value2 == 0)
+            /* if (value2 == 0)
             {
                 new DivideByZeroException();
-            }
+            }*/
             
-            return value1 / value2;
+            return value1/value2;
 
         }
      
