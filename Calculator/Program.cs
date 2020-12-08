@@ -89,7 +89,7 @@ namespace Calculator
                 }
                 try
                 {
-                    result = context.Do(cleanValue1, cleanValue1);
+                    result = context.Do(cleanValue1, cleanValue2);
                     if (double.IsNaN(result))
                     {
                         Console.WriteLine("This operation will result in a mathematical error.\n");
