@@ -1,10 +1,12 @@
+using CalculatorCore.Interfaces;
+
 namespace CalculatorCore
 {
-    public concreteCalculateSubstraction : CalculatorInterface
+    public class ConcreteSubstraction : CalculatorInterface
     {
-        public  double DoOperation (double value1 , double value2)
+        public double DoOperation(double value1, double value2)
         {
-            return value1 - value2 ;
+            return value1 - value2;
         }
     }
 

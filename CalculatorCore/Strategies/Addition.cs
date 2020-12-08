@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-namespace CalculatorCore
-
+using CalculatorCore.Interfaces;
+namespace CalculatorCore.Strategies
 {
-    public concreteCalculateAddition : CalculatorInterface
-        public double DoOperation (double value1 , double value2)
-        {
-            return value1 + value2 ;
-        }
-  
-
+    public class ConcreteAddition  : CalculatorInterface
+    {
+           public double DoOperation(double value1, double value2)
+           {
+               return value1 + value2;
+           }
+    }
 }

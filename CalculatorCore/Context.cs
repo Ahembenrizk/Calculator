@@ -1,3 +1,8 @@
+using CalculatorCore.Interfaces;
+using System;
+using System.Collections.Generic;
+using CalculatorCore.Strategies;
+
 namespace CalculatorCore
 {
     public class Context
@@ -15,7 +20,7 @@ namespace CalculatorCore
         }
 
         // Usually, the Context allows replacing a Calculate object at runtime.
-        public void SetCalculate(CalculatorInterface calculate)
+        public void SetCalculator(CalculatorInterface calculate)
         {
             this._calculate = calculate;
         }

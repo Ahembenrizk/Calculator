@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-namespace CalculatorCore
+namespace CalculatorCore.Interfaces
 {
     public interface CalculatorInterface
     {
-        double DoOperation(double value1, double value2);
+        public double DoOperation(double value1, double value2);
     }
 
 }
