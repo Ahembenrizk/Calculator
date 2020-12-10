@@ -2,6 +2,7 @@ D:\GitHub\Calculator\CalculatorCore\bin\Debug\net5.0\CalculatorCore.deps.json
 D:\GitHub\Calculator\CalculatorCore\bin\Debug\net5.0\CalculatorCore.dll
 D:\GitHub\Calculator\CalculatorCore\bin\Debug\net5.0\ref\CalculatorCore.dll
 D:\GitHub\Calculator\CalculatorCore\bin\Debug\net5.0\CalculatorCore.pdb
+D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.csprojAssemblyReference.cache
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.AssemblyInfoInputs.cache
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.AssemblyInfo.cs
@@ -9,4 +10,3 @@ D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.csproj.CoreC
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.dll
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\ref\CalculatorCore.dll
 D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.pdb
-D:\GitHub\Calculator\CalculatorCore\obj\Debug\net5.0\CalculatorCore.csprojAssemblyReference.cache
